@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дропшипинг магазин</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Нашият онлайн магазин</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Начало</a></li>
+                <li><a href="/cart.html">Кошница (<span id="cart-count">0</span>)</a></li>
+                <li><a href="/checkout.html">Плащане</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="products">
+        <h2>Продукти на разположение</h2>
+        <div class="product-list">
+            <div class="product" data-name="Продукт 1" data-price="50">
+                <img src="https://via.placeholder.com/150" alt="Продукт 1">
+                <h3>Продукт 1</h3>
+                <p>Цена: 50 лв.</p>
+                <button onclick="addToCart('Продукт 1', 50)">Добави в кошницата</button>
+            </div>
+            <div class="product" data-name="Продукт 2" data-price="30">
+                <img src="https://via.placeholder.com/150" alt="Продукт 2">
+                <h3>Продукт 2</h3>
+                <p>Цена: 30 лв.</p>
+                <button onclick="addToCart('Продукт 2', 30)">Добави в кошницата</button>
+            </div>
+            <!-- Повторете за други продукти -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Дропшипинг магазин. Всички права запазени.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
